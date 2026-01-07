@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ block "title" . }}My Go App{{ end }}</title>
+</head>
+<body>
+    <header>
+        <h1>My Go App</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about">About</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        {{ block "content" . }}{{ end }}
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 My Go App</p>
+    </footer>
+</body>
+</html>
